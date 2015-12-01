@@ -1,0 +1,60 @@
+$color__green: #587671;
+$color__gold: #92780F;
+$color__black: #1f1f1f;
+$color__white: #FFFFFF;
+
+$color__background-body: $color__black;
+$color__background-screen: $color__black;
+$color__background-header: transparentize(#000, .2);
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: $color__white;
+$color__text-input: $color__white;
+$color__text-input-focus: #111;
+$color__link: $color__white;
+$color__link-visited: $color__white;
+$color__link-hover: $color__gold;
+$color__text-main: $color__white;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+
+// colors
+$color-palette: (
+        blue: (
+                normal: #146ea8,
+                alt: #4493c1,
+                dark: #18335b
+        ),
+        gray: (
+                normal: #aaa398,
+                alt: #e2e2e2,
+                dark: #75635c
+        ),
+        red: (
+                normal: #c42d31,
+                alt: #c94245,
+                dark: #971b1a
+        ),
+        brown: (
+                normal: #75635c,
+                alt: #aaa398,
+                dark: #4c403c
+        ),
+        turquoise: (
+                normal: #73d5d9,
+                alt: #afd7d8,
+                dark: #3a9ea3
+        )
+);
+
+
+$colors: (
+  black: #323232
+);

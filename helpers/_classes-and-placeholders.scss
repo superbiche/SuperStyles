@@ -1,0 +1,114 @@
+.u-row {
+  padding: 30px 0;
+  text-align: center;
+  @include clearfix();
+}
+
+.u-table {
+  display: table;
+  width: 100%;
+
+  @include media($bp-small) {
+    display: block;
+    width: auto;
+  }
+}
+
+.u-tlf {
+  table-layout: fixed;
+}
+
+.u-left {
+  display: block;
+  float: left;
+}
+
+.u-right {
+  display: block;
+  float: right;
+}
+
+.u-clearer { clear: both; }
+
+.u-clearfix {
+  @include clearfix;
+}
+
+.u-hidden {
+  overflow: hidden;
+  z-index: -100;
+
+  .opacity & {
+    opacity: 0;
+    max-height: 0px;
+    transition: opacity .3s ease, max-height .3s ease .3s;
+  }
+  .noopacity & {
+    display: none;
+  }
+}
+
+.u-visible {
+  z-index: inherit;
+
+  .opacity & {
+    opacity: 1;
+  }
+  .noopacity & {
+    display: block;
+  }
+}
+
+// Invisible but accessible (and sometimes focusable) content
+.u-visuallyhidden,
+.element-invisible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+
+  &.element-focusable,
+  &.u-focusable {
+    &:active,
+    &:focus {
+      position: static !important;
+      clip: auto;
+      overflow: visible;
+      height: auto;
+    }
+  }
+}
+
+.u-fadeout {
+  transition: opacity .3s ease-out, max-height .1s linear .5s, max-width .1s linear .3s;
+  opacity: 0;
+  max-height: 0px;
+  max-width: 0px;
+  overflow: hidden;
+}
+
+.u-nolink {
+  pointer-events: none !important;
+}
+
+// placeholders
+%p-menu {
+  list-style-type: none;
+  padding-left: 0;
+
+  a { text-decoration: none; }
+}
+
+
+.u-icon-spinner {
+  animation: loading 1s infinite linear;
+}
+@include keyframes(loading) {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

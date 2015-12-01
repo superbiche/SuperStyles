@@ -1,3 +1,7 @@
+/**
+ * Admin area styles
+ */
+
 body.logged-in {
    padding-top: 30px;
 }
@@ -11,35 +15,4 @@ body.logged-in.adminimal-menu { margin-top: 28px; }
 #admin-menu {
   font-size: 11px !important;
   background-image: none !important
-}
-
-.page-user .Site-page {
-  text-align: center;
-}
-
-#user-login {
-  width: 400px;
-  margin: 0 auto;
-
-  label {
-    display: block;
-  }
-  
-  small {
-    display: none;
-  }
-  
-  [type="text"],
-  [type="password"] {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 2px solid color-palette(blue, dark);
-    border-radius: 6px;
-    font-size: 12px;
-  }
-
-  [type="submit"] {
-    @extend .o-button--regular;
-    border: none;
-  }
 }
