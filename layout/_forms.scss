@@ -1,0 +1,226 @@
+fieldset {
+  border: none;
+}
+
+[type="submit"],
+button {
+  cursor: pointer;
+
+  &.o-button--small {
+    padding-top: 2px;
+  }
+}
+
+.f-formgroup {
+  margin-bottom: 20px;
+  @include clearfix;
+
+  &:last-child {
+    margin: 0;
+    
+    @include media($bp-small) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.f-formgroup {
+
+  label {
+    display: block;
+    float: left;
+    width: 30%;
+    padding-top: 3px;
+    
+    @include media($bp-small) {
+      float: none;
+      width: auto;
+      text-align: center !important;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+  }
+
+  input {
+    float: right;
+    width: 70%;
+    height: 24px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
+    line-height: 24px;
+    color: color-palette(blue);
+
+    @include media($bp-small) {
+      float: none;
+      width: 100%;
+      height: auto;
+      padding: 10px 10px;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    border-radius: 5px;
+    color: color-palette(blue);
+
+    @include media($bp-small) {
+      height: 200px;
+    }
+  }
+
+  &.f-required {
+
+    label:after {
+      content: "*";
+      display: inline-block;
+      margin-left: 2px;
+    }
+  }
+
+  &.f-checkbox,
+  &.f-radio {
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 15px;
+      list-style: none;
+      @include clearfix;
+    }
+
+    .form-radios > div {
+      margin-bottom: 5px;
+    }
+
+    label {
+      width: 65%;
+      float: none;
+
+      @include media($bp-small) {
+        width: auto;
+      }
+    }
+
+    input {
+      float: left;
+      width: 15px;
+      height: 15px;
+      margin: 4px 10px 0 0;
+
+      @include media($bp-small) {
+
+        width: 25px;
+        height: 25px;
+        margin-left: 30px;
+      }
+    }
+
+    &.f-inline {
+
+      li,
+      .form-radios {
+        display: inline-block;
+        margin: 0 20px 10px 0;
+
+        @include media($bp-small) {
+          display: block;
+        }
+      }
+
+      .form-radios label {
+        @include media($bp-small) {
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+
+  &.f-file {
+
+    label {
+      width: 100%;
+      float: none;
+      margin-bottom: 5px;
+    }
+  }
+
+  &.f-formgroup-btn {
+
+    button {
+      border: none;
+      cursor: pointer;
+      line-height: 0;
+    }
+  }
+
+  &.f-medium {
+    width: 50%;
+  }
+
+}
+
+@include placeholder {
+  color: color-palette(blue);
+}
+
+.f-fileWrap {
+  position: relative;
+  width: 180px;
+
+  input {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+  }
+
+  &:before {
+    content: attr(data-textButton);
+    width: 100%;
+    font-size: $base-font-size !important;
+    @extend %btn;
+    @extend %btn-small;
+  }
+}
+
+label.required:after {
+  content: "*";
+  display: inline-block;
+  margin-left: 2px;
+}
+
+#artipole-contact-showroom-form {
+  padding: 50px;
+
+  input[type=text], textarea {
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 5px;
+    line-height: 24px;
+    color: #146ea8;
+    border: 1px solid #146ea8;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  #edit-submit {
+    padding: 0;
+    float: right;
+  }
+  #edit-wrapper {
+    width: 50%;
+    > div {
+      margin-bottom: 15px;
+    }
+  }
+}

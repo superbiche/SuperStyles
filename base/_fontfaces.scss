@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Exo-Light';
+  src: url('../fonts/exo/exo-light.eot');
+  src: url('../fonts/exo/exo-light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/exo/exo-light.woff2') format('woff2'),
+  url('../fonts/exo/exo-light.woff') format('woff'),
+  url('../fonts/exo/exo-light.ttf') format('truetype'),
+  url('../fonts/exo/exo-light.svg#exo-lightlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+
+
+
+@font-face {
+  font-family: 'Exo-Bold';
+  src: url('../fonts/exo/exo-bold.eot');
+  src: url('../fonts/exo/exo-bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/exo/exo-bold.woff2') format('woff2'),
+  url('../fonts/exo/exo-bold.woff') format('woff'),
+  url('../fonts/exo/exo-bold.ttf') format('truetype'),
+  url('../fonts/exo/exo-bold.svg#exobold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Exo';
+  src: url('../fonts/exo/exo-regular.eot');
+  src: url('../fonts/exo/exo-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/exo/exo-regular.woff2') format('woff2'),
+  url('../fonts/exo/exo-regular.woff') format('woff'),
+  url('../fonts/exo/exo-regular.ttf') format('truetype'),
+  url('../fonts/exo/exo-regular.svg#exoregular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Archivo Black';
+  src: url('../fonts/archivo-black/archivoblack.eot');
+  src: url('../fonts/archivo-black/archivoblack.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/archivo-black/archivoblack.woff2') format('woff2'),
+  url('../fonts/archivo-black/archivoblack.woff') format('woff'),
+  url('../fonts/archivo-black/archivoblack.ttf') format('truetype'),
+  url('../fonts/archivo-black/archivoblack.svg#archivo_blackregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+$font-families: (
+  exo: "'Exo', 'Arial', 'Helvetica', sans-serif",
+  exo-light: "'Exo-Light', 'Arial', 'Helvetica', sans-serif",
+  exo-bold: "'Exo-Bold', 'Arial', 'Helvetica', sans-serif",
+  archivo: "'Archivo Black', 'Arial Black', 'Arial Bold', 'Gadget', sans-serif"
+);

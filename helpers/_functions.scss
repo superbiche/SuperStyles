@@ -1,0 +1,12 @@
+@function color-palette($color, $variant: normal) {
+  @return map-get(map-get($color-palette, $color), $variant);
+}
+
+@function color($color) {
+  @return map-get($colors, $color);
+}
+
+@function em($target, $context: $base-font-size) {
+  @if $target == 0 { @return 0 }
+  @return $target / $context + 0em;
+}

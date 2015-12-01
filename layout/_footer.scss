@@ -1,0 +1,107 @@
+.SiteFooter {
+  height: $footer-height;
+  padding: 35px 20px;
+  background-color: color-palette(blue, dark);
+  text-align: center;
+  position: relative;
+  @include outer-container();
+
+  @include media($bp-small) {
+    height: auto;
+  }
+}
+
+.SiteFooterLogo {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: -60px;
+
+  @include media($bp-small) {
+    left: 30px;
+  }
+}
+
+.SiteFooterMenu {
+  width: 80%;
+  padding-left: 0;
+  margin: 0 auto;
+  text-align: left;
+  
+  @include media($bp-small) {
+    width: auto;
+    margin: 40px 0 0 40px;
+  }
+
+  &,
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  > li {
+    text-transform: uppercase;
+    float: left;
+    margin-right: 30px;
+
+    @include media($bp-small) {
+      float: none;
+      padding: 20px 0;
+      font-size: 1.4em;
+      border-top: 1px solid darken(color-palette(blue, dark), 20%);
+
+      &:first-child {
+        padding-top: 0;
+        border-top: none;
+      }
+    }
+  }
+
+  a,
+  a:visited {
+    display: inline-block;
+    color: color-palette(blue, alt);
+    text-decoration: none;
+    line-height: 1.3;
+  }
+}
+
+.SiteFooterMenu-submenu {
+  padding-left: 7px;
+  margin-top: 7px;
+  text-transform: none;
+  font-size: 1em;
+  line-height: 1.8;
+  opacity: .95;
+  @include font(exo-light, light);
+
+  @include media($bp-small) {
+    text-transform: uppercase;
+    font-size: .95em;
+  }
+
+  a,
+  a:visited {
+    color: #FFF;
+
+    @include media($bp-small) {
+      padding: 8px 0;
+    }
+  }
+}
+
+
+#Footer-backofficeBtn {
+  display: block;
+
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+
+  text-transform: uppercase;
+  color: color-palette(blue,alt);
+  font-size: em(10px);
+  text-decoration: none;
+
+  &:hover { color: #fff; }
+}

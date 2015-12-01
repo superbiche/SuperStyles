@@ -1,0 +1,54 @@
+.js .messages ul {
+  margin: 0;
+}
+.js .messages {
+  @include transform(translate3d(0, 0, 0));
+  @include transition(all .7s linear);
+
+  margin-top: 30px;
+
+  width: $page-width;
+  z-index: 9999;
+  padding: 15px;
+  color: #fff;
+  box-shadow: -3px -3px 10px transparentize(#2C2C2C, .3);
+
+  @include media($bp-small) {
+    width: auto;
+    padding: 10px;
+
+    ul {
+      padding-left: 10px;
+      width: 150px;
+      font-size: .7em;
+    }
+  }
+
+
+  &.visible {
+    @include transition(all .5s linear);
+
+  }
+  &.success {
+    background-color: color-palette(blue);
+  }
+  &.status {
+    background-color: color-palette(blue, alt);
+  }
+  &.error {
+    background-color: color-palette(red);
+  }
+}
+
+.js .messages-close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+
+#cboxLoadedContent .messages {
+  margin-top: 0 !important;
+}

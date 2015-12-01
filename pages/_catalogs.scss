@@ -1,0 +1,61 @@
+.Catalog-brochures {
+  padding: 0 30px;
+  margin-top: 20px;
+  min-height: 110px;
+
+  text-align: center;
+  @include clearfix();
+
+  @include media($bp-small) {
+    padding: 0 10px;
+  }
+
+  .BlockBrochure-content {
+    color: map-get(map-get($color-palette, blue), dark);
+    text-align: left;
+    width: 230px;
+
+    @include media($bp-small) {
+      width: auto;
+      padding: 0;
+      text-align: center;
+
+      [class*="o-button"] {
+        width: 100%;
+      }
+    }
+  }
+
+  > h2 {
+    margin: 2em;
+  }
+
+}
+
+.Catalog-noCatalogAlert {
+  margin-top: 0;
+}
+
+.CatalogueGeoloc {
+  @include clearfix;
+}
+
+@include media($bp-small) {
+  .page-catalogue {
+
+    .RoomUniverse-head {
+
+      > img {
+        height: 50em;
+      }
+    }
+    
+    .RoomUniverse-headCta {
+      [class*="o-button"] {
+        padding-top: 15px;
+      }
+    }
+
+    .RoomUniverse-headList-logo { display: none; }
+  }
+}

@@ -1,0 +1,26 @@
+ul.tabs, ul.action-links {
+  position: absolute;
+  top: 23px;
+  right: 0px;
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+  z-index: 99;
+  color: #fff;
+  background-color: #101010;
+  font-size: 11px;
+}
+ul.tabs a, ul.action-links a {
+  color: #fff;
+  font-family: 'lucida grande', Verdana, sans-serif;
+  font-size: 11px;
+  text-decoration: none
+}
+ul.tabs li, ul.action-links li {
+  display: inline-block;
+  padding: 0 4px;
+  border-right: 1px solid #fff
+}
+ul.tabs li:last-child, body > ul.action-links li:last-child {
+  border-right: none
+}

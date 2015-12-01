@@ -1,0 +1,528 @@
+
+.page-qui-sommes-nous .Page-title { display: none; }
+
+// Main block
+#About {
+
+  margin-bottom: -80px;
+
+  @extend %bgBottom;
+}
+
+#About-titleBlock {
+  @extend %bigTitle;
+  background: url('../img/about-title.jpg');
+}
+
+// -- end Main block
+
+// Triptick
+#About-triptick {
+  padding: 50px 0;
+  position: relative;
+
+  > p {
+    margin-top: 0;
+
+    text-align: center;
+    font-size: em(15px);
+    text-transform: uppercase;
+    color: color-palette(blue,normal);
+
+    @include font('exo-bold');
+    
+    @include media($bp-small) {
+      position: absolute;
+      top: -130px;
+      left: 30px;
+      right: 40px;
+
+      text-align: left;
+      color: #ffffff;
+      font-size: 1.5em;
+      @include font(exo-light, light);
+    }
+  }
+
+  ul {
+    margin: 30px auto 0 auto;
+    padding: 0;
+
+    display: table;
+    width: 90%;
+
+    li {
+      display: table-cell;
+      vertical-align: top;
+
+      padding: 0 20px;
+
+      font-size: em(14px);
+      text-align: center;
+
+      width: 33%;
+
+      @include media($bp-small) {
+        width: 100%;
+      }
+
+      span {
+        display: block;
+        margin: 0 auto 15px auto;
+
+        position: relative;
+
+        width: 95px;
+        height: 95px;
+
+        background-color: color-palette(blue, dark);
+        border-radius: 100px;
+
+        i {
+          display: block;
+          position: absolute;
+
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+
+          &:before { content:''; }
+
+        }
+      }
+
+      p {
+        display: block;
+        margin: 0 0 10px 0;
+
+        color: color-palette(blue,normal);
+        text-transform: uppercase;
+        font-size: em(13px);
+
+      }
+
+      &:nth-child(2) span:before {
+        @include sprite($icon-meeting);
+      }
+      &:nth-child(3) span:before {
+        @include sprite($icon-tablet);
+      }
+
+    }
+  }
+
+  .u-slideControls {
+    top: 33%;
+  }
+}
+
+// Panel
+.About-panel {
+  width: 880px;
+
+  margin: 30px auto 0;
+
+  background: color-palette(gray, alt);
+
+  position: relative;
+
+  @include clearfix();
+
+  @include media($bp-small) {
+    width: auto;
+  }
+
+  h2 {
+    position: absolute;
+    top: -23px;
+    left: 50%;
+
+    width: 300px;
+
+    margin: 0 0 0 -150px;
+    padding: 10px 10px 15px 10px;
+
+    background: #fff;
+
+    font-size: em(20px);
+    text-transform: uppercase;
+    text-align: center;
+
+    @include media($bp-small) {
+      top: auto;
+    }
+  }
+}
+
+.About-panel-content {
+  float: left;
+  padding: 35px;
+  padding-bottom: 0;
+  
+  @include media($bp-small) {
+    padding: 35px 20px;
+  }
+
+  h3 {
+    color: color-palette(blue, alt);
+    text-transform: uppercase;
+    font-size: em(15px);
+    font-weight: bold;
+  }
+
+  @include media($bp-small) {
+    width: auto !important;
+    text-align: center !important;
+    font-size: 1.8em !important;
+  }
+}
+
+.About-panel-blockBtn {
+  width: 100%;
+
+  a {
+    display: inline-block;
+    width: 30%;
+
+    padding: 10px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: em(12px);
+    border-radius: 3px;
+
+    @include media($bp-small) {
+      display: block;
+      width: auto !important;
+      margin-top: 15px;
+
+      @include font(exo-light, light);
+    }
+
+    &:nth-child(3) {
+      background: #83a5aa;
+      width: 38%;
+
+      &:hover {
+        background: darken(#83a5aa, 10%);
+      }
+    }
+    &:nth-child(1) {
+      background: color-palette(brown);
+      &:hover {
+        background: color-palette(brown, dark);
+      }
+    }
+    &:nth-child(2) {
+      background: color-palette(turquoise);
+      &:hover {
+        background: color-palette(turquoise, dark);
+      }
+    }
+  }
+}
+
+.About-panel-salle {
+
+  img {
+    display: block;
+    float: left;
+  }
+
+  .About-panel-content {
+    width: 496px;
+  }
+
+}
+
+// Metier
+#About-metier {
+  padding-top: 40px;
+  position: relative;
+
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-size: em(20px);
+    margin-top: 0;
+
+  }
+
+  p {
+    text-align: center;
+
+    @include media($bp-small) {
+
+    }
+  }
+
+  h3,
+  p {
+    @include media($bp-small) {
+      padding: 0 20px;
+      font-size: 1.7em;
+    }
+  }
+
+  ul {
+    margin: 0 auto 20px auto;
+    padding: 0;
+    width: 900px;
+    @include clearfix;
+
+    @include media($bp-small) {
+      width: auto;
+    }
+
+    li {
+      float: left;
+      width: 20%;
+
+      margin-bottom: 20px;
+
+      list-style: none;
+      text-align: center;
+
+      @include media($bp-small) {
+        float: none;
+        display: block;
+        width: 100%;
+      }
+
+      a {
+        width: 100%;
+        margin: 0;
+
+        text-decoration: none;
+        color: color-palette(blue,normal);
+      }
+
+      img,
+      span {
+        display: block;
+        margin: 0 auto;
+      }
+
+      span {
+        text-transform: uppercase;
+        color: color-palette(blue);
+
+        margin-top: 10px;
+      }
+    }
+  }
+
+  [class*="o-button"] {
+    display: block;
+    width: 165px;
+    margin: 0 auto;
+    text-align: center;
+
+    @include media($bp-small) {
+      width: 80%;
+    }
+  }
+}
+
+// -- end Metier
+
+
+.About-panel-organisation {
+
+  @include media($bp-small) {
+    display: flex;
+    flex-direction: column-reverse;
+
+    h2 {
+      top: 0;
+    }
+  }
+
+  .About-panel-content {
+    width: 50%;
+  }
+
+  #About-videoLink {
+    display: block;
+    float: right;
+    width: 50%;
+    
+    @include media($bp-small) {
+      float: none;
+      width: auto;
+      margin-top: 100px;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+  
+  [class*="o-button"] {
+    font-size: 1.4em;
+    
+    @include media($bp-small) {
+      font-size: 0.8em;
+    }
+  }
+
+}
+
+
+// Timeline
+.Timeline {
+  background: color-palette(blue) url('../img/bg-bottom-container.png') no-repeat center bottom;
+  margin-top: 50px;
+  padding-bottom: 200px;
+
+  @include media($bp-small) {
+    margin-top: 0;
+  }
+
+  &:after {
+    display: block;
+    content: '';
+
+    width: 13px;
+    height: 13px;
+
+    position: absolute;
+    left: 50%;
+    margin-left: -6px;
+
+    border-radius: 15px;
+    background: #fff;
+  }
+
+  h3 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+
+    padding: 50px 0;
+    margin: 0;
+    font-size: em(20px);
+    
+    @include media($bp-small) {
+      font-size: em(35px);
+    }
+  }
+}
+
+.Timeline-date {
+  @include font('archivo');
+  font-size: em(50px);
+  color: #fff;
+  text-align: center;
+  line-height: 1em;
+  margin: 15px 0;
+
+  @include media($bp-small) {
+    font-size: em(35px);
+    margin: 20px 0;
+  }
+
+  span {
+    display: block;
+
+    color: color-palette(blue, dark);
+    text-transform: uppercase;
+    font-size: 20px;
+    @include font('exo');
+    line-height: 1em;
+
+    @include media($bp-small) {
+      margin-top: .25em;
+      font-size: .5em;
+    }
+  }
+}
+
+.Timeline-description {
+  @include clearfix;
+
+  .Timeline-description-content {
+    width: 50%;
+    position: relative;
+
+    padding: 0 20px;
+
+    color: rgba(255,255,255,0.5);
+    font-size: em(15px);
+    
+    @include media($bp-small) {
+      width: auto;
+      font-size: em(18px);
+    }
+
+    &:after {
+      content:'';
+      display: block;
+
+      position: absolute;
+
+      top: 0;
+
+      width: 1px;
+      height: 100%;
+
+      background: #fff;
+
+      @include media($bp-small) {
+        top: auto;
+        bottom: -20px;
+        left: 50%;
+        
+        width: 40%;
+        height: 1px;
+
+        margin-left: -20%;
+      }
+    }
+
+    span {
+      display: block;
+      color: #fff;
+      text-transform: uppercase;
+
+      @include font('exo-bold');
+    }
+
+    &.left {
+      text-align: right;
+      float: left;
+
+      &:after { right: -1px; }
+    }
+
+    &.right {
+      float: right;
+
+      &:after { left: 0; }
+    }
+
+    &.left,
+    &.right {
+
+      @include media($bp-small) {
+        float: none;
+        text-align: center;
+
+        &:after { 
+          left: 50%; 
+          right: auto; 
+        }
+        
+      }
+
+    }
+  }
+
+}
+
+// -- end Timeline

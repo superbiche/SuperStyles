@@ -1,0 +1,55 @@
+%imageBorder {
+  display: inline-block;
+  position: relative;
+
+  img { display: block; }
+
+  &:before,
+  &:after {
+    content: "";
+    background-color: color-palette(red);
+    position: absolute;
+  }
+
+  &:before {
+    width: 200px;
+    height: 9px;
+  }
+
+  &:after {
+    height: 54px;
+    width: 9px;
+  }
+}
+.u-imageBorder {
+
+  &--bottom-left,
+  &--bottom-right {
+    @extend %imageBorder;
+
+    &:before,
+    &:after {
+      bottom: -9px;
+    }
+  }
+
+  &--top-left,
+  &--top-right {
+    @extend %imageBorder;
+
+    &:before,
+    &:after {
+      top: -4px;
+    }
+  }
+
+  &--bottom-left {
+    &:before { left: 0; }
+    &:after { left: -9px; }
+  }
+
+  &--bottom-right {
+    &:before { right: 0; }
+    &:after { right: -9px; }
+  }
+}

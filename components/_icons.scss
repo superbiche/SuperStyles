@@ -1,0 +1,11 @@
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+}
+
+.icon-target { @include sprite($icon-target); }
+.icon-marker-home { @include sprite($icon-marker-home); }
+.icon-meeting { @include sprite($icon-meeting); }
+.icon-tablet { @include sprite($icon-tablet); }
+.icon-advice { @include sprite($icon-advice); }
+.icon-choice { @include sprite($icon-choice); }
+.icon-install { @include sprite($icon-install); }

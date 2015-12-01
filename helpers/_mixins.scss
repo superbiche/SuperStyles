@@ -1,0 +1,38 @@
+@mixin font($font, $weight: auto, $style: auto, $variant: auto) {
+  font-family: unquote(map-get($font-families, $font));
+
+  @if $weight != auto {
+    font-weight: $weight;
+  }
+
+  @if $style != auto {
+    font-style: $style;
+  }
+
+  @if $variant != auto {
+    font-variant: $variant;
+  }
+}
+
+@mixin fontcustom($icon) {
+  content: $icon;
+  display: inline-block;
+  font-family: "fontcustom";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}

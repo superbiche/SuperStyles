@@ -1,0 +1,44 @@
+.ArtisanSearch {
+  .RoomUniverse-head {
+    margin-bottom: 40px;
+  }
+  
+  .RoomUniverse-headDesc {
+    margin-top: 70px;
+  }
+
+  .RoomUniverse-headCta a:first-of-type {
+    margin-right: 20px;
+  }
+  
+  .RoomUniverse-roomCta {
+    text-align: left;
+    padding-left: 45px;
+  }
+  
+  .Geolocation-search {
+    @include span-columns(5 of 12);
+    margin: 0;
+  }
+
+  .Geolocation-searchForm {
+    display: none;
+  }
+
+  .Geolocation-searchImage {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+.ArtisanSearch-content {
+  padding: 0 40px;
+  color: color-palette(blue, dark);
+  @include span-columns(7 of 12);
+  @include clearfix;
+}
+
+.ArtisanSearch-content-cta {
+  float: right;
+}

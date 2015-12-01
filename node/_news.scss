@@ -1,0 +1,20 @@
+.node-type-news {
+
+  .Site-page:after { background: url('../img/artisan-background.png') center bottom no-repeat; }
+
+  .Page-title {
+    padding: 30px 30px 0 30px;
+    margin-bottom: 0;
+  }
+
+  article {
+    padding: 0 30px;
+    @include clearfix;
+    
+    img {
+      float: right;
+      margin-left: 50px;
+    }
+  }
+
+}

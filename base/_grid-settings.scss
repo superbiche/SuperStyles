@@ -1,0 +1,18 @@
+@import "../vendor/neat/neat-helpers";
+@import "../helpers/variables";
+
+$max-width: $page-max-width;
+
+$max-width-em: em($page-max-width);
+
+$bp-small: new-breakpoint(max-width 49em 4);
+$bp-med: new-breakpoint(max-width 65em 8);
+
+$bp-notSmall: new-breakpoint(min-width 50em);
+//$bp-large: new-breakpoint(min-width 76em 12);
+//$bp-med: 65
+//$visual-grid: true;
+$visual-grid: false;
+$visual-grid-color: #000;
+$visual-grid-index: front;
+$visual-grid-opacity: .8;
