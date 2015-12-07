@@ -1,64 +1,19 @@
-@import "helpers/helpers";
+@import "vendor/vendor";
 
-@import "vendor/bourbon/bourbon";
-@import "base/grid-settings";
-@import "vendor/neat/neat";
+@import "variables/variables";
 
 @import "helpers/helpers";
 
-// Normalize reset
-@import "base/normalize";
+@import "base/base";
 
-// Base stylesheets
-@import "base/fontfaces";
-@import "base/fontcustom";
-@import "base/sprites";
-@import "base/typography";
-@import "base/html";
+@import "layout/layout";
 
-// Other vendors
-@import "vendor/fancyMessages";
-@import "vendor/colorbox";
-@import "vendor/outdated-browser";
+@import "navigation/navigation";
 
+@import "components/components";
 
-// Layout of structural main elements
-@import "layout/forms";
-@import "layout/header";
-@import "layout/footer";
-@import "layout/sidebar";
-@import "layout/page-content";
-@import "layout/breadcrumb";
-@import "layout/menus";
+@import "themes/themes";
 
-// Layout of smaller, non structural elements
-@import "components/buttons";
-@import "components/messages";
-@import "components/images";
-@import "components/geolocation-form";
-@import "components/blocks";
-@import "components/icons";
-@import "components/misc";
+@import "pages/pages";
 
-// Nodes
-@import "node/news";
-
-// Blocks
-@import "blocks/brochure";
-@import "blocks/news";
-
-// Themes per-scope
-@import "themes/theme";
-@import "themes/admin";
-
-// Specific pages layout
-@import "pages/front";
-@import "pages/contact";
-@import "pages/sitemap";
-@import "pages/room-universe";
-@import "pages/taxonomy-term-crafts";
-@import "pages/about";
-@import "pages/difference";
-@import "pages/showroom";
-@import "pages/catalogs";
-@import "pages/artisan";
+@import "nodes/nodes";

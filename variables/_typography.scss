@@ -12,7 +12,7 @@ $font__weight-light: 300;
 $font__weight-regular: 400;
 $font__weight-bold: 700;
 
-$base-font-size: 13px;
+$size__font-base: 13px;
 
 @for $i from 1 through 6 {
   h#{$i},
