@@ -8,9 +8,6 @@ body.logged-in {
 
 body.logged-in.adminimal-menu { margin-top: 28px; }
 
-.element-invisible {
-  @extend .visually-hidden;
-}
 
 #admin-menu {
   font-size: 11px !important;
